@@ -17,6 +17,7 @@ class Search extends StatefulWidget {
 
 class SearchState extends State<Search> {
   Widget appBarTitle = new Text("Search");
+  // ignore: non_constant_identifier_names
   Icon SearchBotton = new Icon(Icons.search);
   String value;
   @override
@@ -69,6 +70,7 @@ class SearchState extends State<Search> {
                   value: value,
                   hint: Text('Enter Choose Country'),
                   isExpanded: true,
+                  // ignore: non_constant_identifier_names
                   onChanged: (NewValue) {
                     print(value);
                     this.value = NewValue;
@@ -187,6 +189,7 @@ class SearchState extends State<Search> {
                     ),
                   ],
                 ),
+                padding: null,
               ),
 
               new TextField(
@@ -198,6 +201,7 @@ class SearchState extends State<Search> {
                   value: value,
                   hint: Text('Hall type'),
                   isExpanded: true,
+                  // ignore: non_constant_identifier_names
                   onChanged: (NewValue) {
                     print(value);
                     this.value = NewValue;
@@ -217,6 +221,7 @@ class SearchState extends State<Search> {
                     ),
                   ],
                 ),
+                padding: null,
               ),
               new TextField(
                 style: TextStyle(fontSize: 10.0, color: Colors.black),
@@ -237,6 +242,7 @@ class SearchState extends State<Search> {
                   value: value,
                   hint: Text('Number Of Chairs'),
                   isExpanded: true,
+                  // ignore: non_constant_identifier_names
                   onChanged: (NewValue) {
                     print(value);
                     this.value = NewValue;
@@ -274,12 +280,14 @@ class SearchState extends State<Search> {
                     ),
                   ],
                 ),
+                padding: null,
               ),
               Padding(
                 child: DropdownButton(
                   value: value,
                   hint: Text('The Space'),
                   isExpanded: true,
+                  // ignore: non_constant_identifier_names
                   onChanged: (NewValue) {
                     print(value);
                     this.value = NewValue;
@@ -305,6 +313,7 @@ class SearchState extends State<Search> {
                     ),
                   ],
                 ),
+                padding: null,
               ),
 
               new Padding(padding: EdgeInsets.only(top: 7)),
